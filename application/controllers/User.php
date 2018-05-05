@@ -8,9 +8,9 @@ class UserController extends Controller_Abstract
         $this->getView()->assign("content", "I am in application/controllers/User.php/indexAction");
     }
 
-    public function testAction(){
+    public function test2Action(){
 //        $this->getView()->assign("testcontent", "test hello");
         Dispatcher::getInstance()->disableView(0);
-        echo 'Great,It Works!';
+        echo 'Great,It Works! There is User test method.';
     }
 }
